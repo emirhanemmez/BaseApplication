@@ -1,0 +1,2 @@
+rootProject.name = "TrendyolCaseApp"
+include ':app'
