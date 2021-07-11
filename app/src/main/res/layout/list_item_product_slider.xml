@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.emirhan.trendyolcaseapp.data.Product" />
+
+        <variable
+            name="product"
+            type="com.emirhan.trendyolcaseapp.data.Product" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewProduct"
+            url="@{product.imageUrl}"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{product.name}" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{product.categoryName}" />
+
+    </LinearLayout>
+</layout>
